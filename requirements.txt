@@ -1,0 +1,81 @@
+# ============================================================
+# benchmark4lm - Performance Profiling & Analysis Dependencies
+# ============================================================
+
+# ── Core ──────────────────────────────────────────────────────
+numpy>=1.24.0,<2.0
+pandas>=2.0.0
+pyyaml>=6.0
+rich>=13.0.0
+click>=8.1.0
+tabulate>=0.9.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── PyTorch Ecosystem ─────────────────────────────────────────
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+accelerate>=0.25.0
+datasets>=2.16.0
+transformers>=4.36.0
+peft>=0.7.0
+trl>=0.7.0
+
+# ── DeepSpeed / Megatron ──────────────────────────────────────
+deepspeed>=0.12.0
+megatron-lm>=0.5.0
+
+# ── Inference Frameworks ──────────────────────────────────────
+vllm>=0.3.0
+sglang>=0.2.0
+# tensorrt_llm    # install via NVIDIA wheel separately
+# ollama          # install via system package manager
+# llamafile       # single binary download
+
+# ── Profiling & Tracing ───────────────────────────────────────
+py-spy>=0.3.14
+line-profiler>=4.1.0
+memory-profiler>=0.61.0
+nvtx>=0.2.8
+tensorboard>=2.15.0
+wandb>=0.16.0
+
+# ── NVIDIA Nsight CLI helpers ─────────────────────────────────
+# nsys / ncu come with NVIDIA Nsight Systems installation
+# Ensure /opt/nvidia/nsight-systems/bin is on $PATH
+
+# ── LangFuse (LLM Tracing & Cost) ─────────────────────────────
+langfuse>=2.30.0
+openinference-instrumentation-langchain>=0.1.0
+
+# ── Arize Phoenix (RAG Observability) ─────────────────────────
+arize-phoenix>=5.0.0
+openinference-instrumentation-llama-index>=3.0.0
+
+# ── LangChain / LlamaIndex (RAG) ──────────────────────────────
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-community>=0.2.0
+llama-index>=0.10.0
+
+# ── kTransformers (optional) ──────────────────────────────────
+# ktransformers>=0.1.0  # install from source if needed
+
+# ── System Monitoring ─────────────────────────────────────────
+psutil>=5.9.0
+pynvml>=11.5.0
+GPUtil>=1.4.0
+py3nvml>=0.2.7
+
+# ── LMDeploy (optional) ───────────────────────────────────────
+# lmdeploy>=0.2.0
+
+# ── Axolotl (optional) ────────────────────────────────────────
+# axolotl   # install from source
+
+# ── Colossal-AI (optional) ────────────────────────────────────
+# colossalai>=0.3.0
+
+# ── TGI (optional) ───────────────────────────────────────────
+# text-generation-inference  # Docker-based

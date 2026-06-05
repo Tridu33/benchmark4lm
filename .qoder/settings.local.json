@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /home/tridu33/benchmark4lm -maxdepth 4 -type f | head -80)"
+    ]
+  }
+}
